@@ -2,7 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -57,3 +56,8 @@
   margin-top: 40px;
 }
 
+.card-image{
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+}

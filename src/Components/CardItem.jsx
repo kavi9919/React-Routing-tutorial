@@ -1,14 +1,20 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-const CardItem = (props) => {
+export const CardItem = (prop) => {
   return (
-    <div>
-        <h1>{props.title}</h1>
-        <p>{props.text}</p>
-        {props.children}
-        
-    </div>
+         <>
+         <Card style={{ width: '18rem' }} className='mx-2 mb-4'>
+            <Card.Img variant="top" src={prop.img} />
+            <Card.Body>
+                <Card.Title>{prop.title}</Card.Title>
+                    <Card.Text>
+                     <p>{prop.price}</p>
+                    </Card.Text>
+                <Button variant="primary">Add to cart</Button>
+            </Card.Body>
+    </Card>
+         </>
   )
 }
-
-export default CardItem

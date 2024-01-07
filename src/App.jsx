@@ -1,6 +1,4 @@
 import './App.css'
-import Card from './Components/Card'
-import Navbar from './Components/Navbar'
 import { Routes,Route } from 'react-router-dom'
 import Home from './assets/pages/Home'
 import Contact from './assets/pages/Contact'
